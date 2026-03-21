@@ -1,0 +1,8 @@
+D:/ic_pastry/renderer/CMakeFiles/INSTALL.dir
+D:/ic_pastry/renderer/CMakeFiles/ALL_BUILD.dir
+D:/ic_pastry/renderer/CMakeFiles/ZERO_CHECK.dir
+D:/ic_pastry/renderer/TKJT/CMakeFiles/TKJT.dir
+D:/ic_pastry/renderer/TKJT/CMakeFiles/INSTALL.dir
+D:/ic_pastry/renderer/TKJT/CMakeFiles/ALL_BUILD.dir
+D:/ic_pastry/renderer/JTAssistant/CMakeFiles/JTAssistant.dir
+D:/ic_pastry/renderer/JTAssistant/CMakeFiles/INSTALL.dir

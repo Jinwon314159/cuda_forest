@@ -1,0 +1,735 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{6FE4DA65-B2FF-325A-9982-9A95CC7750E6}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>JTAssistant</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\ic_pastry\renderer\JTAssistant\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">JTAssistant.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">JTAssistant</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\ic_pastry\renderer\JTAssistant\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">JTAssistant.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">JTAssistant</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\ic_pastry\renderer\JTAssistant\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">JTAssistant.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">JTAssistant</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\ic_pastry\renderer\JTAssistant\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">JTAssistant.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">JTAssistant</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(OPENCV30_DIR)\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OPENCV30_DIR)\x64\vc12\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(OPENCV30_DIR)\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OPENCV30_DIR)\x64\vc12\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\ic_pastry\renderer\JTAssistant;D:\ic_pastry\WViewer\JTAssistant;D:\ic_pastry\WViewer\JTAssistant\src;D:\ic_pastry\WViewer\JTAssistant\src\BVH;D:\ic_pastry\WViewer\JTAssistant\src\JTData;D:\ic_pastry\WViewer\JTAssistant\src\JTGui;D:\ic_pastry\WViewer\JTAssistant\src\JTVis;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc;C:\zlib-1.2.8-x64\include;D:\ic_pastry\WViewer\JTAssistant\Eigen3;D:\ic_pastry\WViewer\TKJT\src\JtAttribute;D:\ic_pastry\WViewer\TKJT\src\JtData;D:\ic_pastry\WViewer\TKJT\src\JtDecode;D:\ic_pastry\WViewer\TKJT\src\JtElement;D:\ic_pastry\WViewer\TKJT\src\JtNode;D:\ic_pastry\WViewer\TKJT\src\JtProperty;D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtGui;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtCore;C:\Qt\Qt5.7.0\5.7\msvc2013_64\.\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4718</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;DEB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CSFDB;WNT;WINVER=0x0500;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;DEB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CSFDB;WNT;WINVER=0x0500;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ic_pastry\renderer\JTAssistant;D:\ic_pastry\WViewer\JTAssistant;D:\ic_pastry\WViewer\JTAssistant\src;D:\ic_pastry\WViewer\JTAssistant\src\BVH;D:\ic_pastry\WViewer\JTAssistant\src\JTData;D:\ic_pastry\WViewer\JTAssistant\src\JTGui;D:\ic_pastry\WViewer\JTAssistant\src\JTVis;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc;C:\zlib-1.2.8-x64\include;D:\ic_pastry\WViewer\JTAssistant\Eigen3;D:\ic_pastry\WViewer\TKJT\src\JtAttribute;D:\ic_pastry\WViewer\TKJT\src\JtData;D:\ic_pastry\WViewer\TKJT\src\JtDecode;D:\ic_pastry\WViewer\TKJT\src\JtElement;D:\ic_pastry\WViewer\TKJT\src\JtNode;D:\ic_pastry\WViewer\TKJT\src\JtProperty;D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtGui;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtCore;C:\Qt\Qt5.7.0\5.7\msvc2013_64\.\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\ic_pastry\renderer\JTAssistant;D:\ic_pastry\WViewer\JTAssistant;D:\ic_pastry\WViewer\JTAssistant\src;D:\ic_pastry\WViewer\JTAssistant\src\BVH;D:\ic_pastry\WViewer\JTAssistant\src\JTData;D:\ic_pastry\WViewer\JTAssistant\src\JTGui;D:\ic_pastry\WViewer\JTAssistant\src\JTVis;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc;C:\zlib-1.2.8-x64\include;D:\ic_pastry\WViewer\JTAssistant\Eigen3;D:\ic_pastry\WViewer\TKJT\src\JtAttribute;D:\ic_pastry\WViewer\TKJT\src\JtData;D:\ic_pastry\WViewer\TKJT\src\JtDecode;D:\ic_pastry\WViewer\TKJT\src\JtElement;D:\ic_pastry\WViewer\TKJT\src\JtNode;D:\ic_pastry\WViewer\TKJT\src\JtProperty;D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtGui;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtCore;C:\Qt\Qt5.7.0\5.7\msvc2013_64\.\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic moc for target JTAssistant</Message>
+      <Command>setlocal
+cd D:\ic_pastry\renderer\JTAssistant
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/ic_pastry/renderer/JTAssistant/CMakeFiles/JTAssistant_automoc.dir/ Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>opencv_world300d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\lib\TKernel.lib;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\lib\TKMath.lib;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\lib\intel64\vc12\tbb_debug.lib;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\lib\intel64\vc12\tbbmalloc_debug.lib;opengl32.lib;glu32.lib;C:\zlib-1.2.8-x64\lib\zlibd.lib;..\TKJT\Debug\TKJT.lib;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\Qt5Widgetsd.lib;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\Qt5Guid.lib;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\Qt5Cored.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/ic_pastry/renderer/JTAssistant/Debug/JTAssistant.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/ic_pastry/renderer/JTAssistant/Debug/JTAssistant.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\ic_pastry\renderer\JTAssistant;D:\ic_pastry\WViewer\JTAssistant;D:\ic_pastry\WViewer\JTAssistant\src;D:\ic_pastry\WViewer\JTAssistant\src\BVH;D:\ic_pastry\WViewer\JTAssistant\src\JTData;D:\ic_pastry\WViewer\JTAssistant\src\JTGui;D:\ic_pastry\WViewer\JTAssistant\src\JTVis;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc;C:\zlib-1.2.8-x64\include;D:\ic_pastry\WViewer\JTAssistant\Eigen3;D:\ic_pastry\WViewer\TKJT\src\JtAttribute;D:\ic_pastry\WViewer\TKJT\src\JtData;D:\ic_pastry\WViewer\TKJT\src\JtDecode;D:\ic_pastry\WViewer\TKJT\src\JtElement;D:\ic_pastry\WViewer\TKJT\src\JtNode;D:\ic_pastry\WViewer\TKJT\src\JtProperty;D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtGui;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtCore;C:\Qt\Qt5.7.0\5.7\msvc2013_64\.\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4718</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;No_Exception;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CSFDB;WNT;WINVER=0x0500;QT_NO_DEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;No_Exception;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CSFDB;WNT;WINVER=0x0500;QT_NO_DEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ic_pastry\renderer\JTAssistant;D:\ic_pastry\WViewer\JTAssistant;D:\ic_pastry\WViewer\JTAssistant\src;D:\ic_pastry\WViewer\JTAssistant\src\BVH;D:\ic_pastry\WViewer\JTAssistant\src\JTData;D:\ic_pastry\WViewer\JTAssistant\src\JTGui;D:\ic_pastry\WViewer\JTAssistant\src\JTVis;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc;C:\zlib-1.2.8-x64\include;D:\ic_pastry\WViewer\JTAssistant\Eigen3;D:\ic_pastry\WViewer\TKJT\src\JtAttribute;D:\ic_pastry\WViewer\TKJT\src\JtData;D:\ic_pastry\WViewer\TKJT\src\JtDecode;D:\ic_pastry\WViewer\TKJT\src\JtElement;D:\ic_pastry\WViewer\TKJT\src\JtNode;D:\ic_pastry\WViewer\TKJT\src\JtProperty;D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtGui;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtCore;C:\Qt\Qt5.7.0\5.7\msvc2013_64\.\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\ic_pastry\renderer\JTAssistant;D:\ic_pastry\WViewer\JTAssistant;D:\ic_pastry\WViewer\JTAssistant\src;D:\ic_pastry\WViewer\JTAssistant\src\BVH;D:\ic_pastry\WViewer\JTAssistant\src\JTData;D:\ic_pastry\WViewer\JTAssistant\src\JTGui;D:\ic_pastry\WViewer\JTAssistant\src\JTVis;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc;C:\zlib-1.2.8-x64\include;D:\ic_pastry\WViewer\JTAssistant\Eigen3;D:\ic_pastry\WViewer\TKJT\src\JtAttribute;D:\ic_pastry\WViewer\TKJT\src\JtData;D:\ic_pastry\WViewer\TKJT\src\JtDecode;D:\ic_pastry\WViewer\TKJT\src\JtElement;D:\ic_pastry\WViewer\TKJT\src\JtNode;D:\ic_pastry\WViewer\TKJT\src\JtProperty;D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtGui;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtCore;C:\Qt\Qt5.7.0\5.7\msvc2013_64\.\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic moc for target JTAssistant</Message>
+      <Command>setlocal
+cd D:\ic_pastry\renderer\JTAssistant
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/ic_pastry/renderer/JTAssistant/CMakeFiles/JTAssistant_automoc.dir/ Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>opencv_world300.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\lib\TKernel.lib;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\lib\TKMath.lib;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\lib\intel64\vc12\tbb.lib;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\lib\intel64\vc12\tbbmalloc.lib;opengl32.lib;glu32.lib;C:\zlib-1.2.8-x64\lib\zlibd.lib;..\TKJT\Release\TKJT.lib;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\Qt5Widgets.lib;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\Qt5Gui.lib;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\Qt5Core.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/ic_pastry/renderer/JTAssistant/Release/JTAssistant.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/ic_pastry/renderer/JTAssistant/Release/JTAssistant.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>echo copy "C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\bin\TKernel.dll" "$(OutDir)"
+copy "C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\bin\TKernel.dll" "$(OutDir)"
+echo copy "C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\bin\TKMath.dll" "$(OutDir)"
+copy "C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\bin\TKMath.dll" "$(OutDir)"
+echo copy "$(OPENCV30_DIR)\x64\vc12\bin\opencv_world300.dll" "$(OutDir)"
+copy "$(OPENCV30_DIR)\x64\vc12\bin\opencv_world300.dll" "$(OutDir)"
+echo copy "$(SolutionDir)TKJT\$(Configuration)\TKJT.dll" "$(OutDir)"
+copy "$(SolutionDir)TKJT\$(Configuration)\TKJT.dll" "$(OutDir)"
+echo copy "C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\Qt5Widgets.dll" "$(OutDir)"
+copy "C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\Qt5Widgets.dll" "$(OutDir)"
+echo copy "C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\Qt5Gui.dll" "$(OutDir)"
+copy "C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\Qt5Gui.dll" "$(OutDir)"
+echo copy "C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\Qt5Core.dll" "$(OutDir)"
+copy "C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\Qt5Core.dll" "$(OutDir)"
+echo copy "C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\bin\intel64\vc12\tbbmalloc.dll" "$(OutDir)"
+copy "C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\bin\intel64\vc12\tbbmalloc.dll" "$(OutDir)"
+echo copy "C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\bin\intel64\vc12\tbb.dll" "$(OutDir)"
+copy "C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\bin\intel64\vc12\tbb.dll" "$(OutDir)"
+echo copy "C:\zlib-1.2.8-x64\bin\zlibd.dll" "$(OutDir)"
+copy "C:\zlib-1.2.8-x64\bin\zlibd.dll" "$(OutDir)"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\ic_pastry\renderer\JTAssistant;D:\ic_pastry\WViewer\JTAssistant;D:\ic_pastry\WViewer\JTAssistant\src;D:\ic_pastry\WViewer\JTAssistant\src\BVH;D:\ic_pastry\WViewer\JTAssistant\src\JTData;D:\ic_pastry\WViewer\JTAssistant\src\JTGui;D:\ic_pastry\WViewer\JTAssistant\src\JTVis;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc;C:\zlib-1.2.8-x64\include;D:\ic_pastry\WViewer\JTAssistant\Eigen3;D:\ic_pastry\WViewer\TKJT\src\JtAttribute;D:\ic_pastry\WViewer\TKJT\src\JtData;D:\ic_pastry\WViewer\TKJT\src\JtDecode;D:\ic_pastry\WViewer\TKJT\src\JtElement;D:\ic_pastry\WViewer\TKJT\src\JtNode;D:\ic_pastry\WViewer\TKJT\src\JtProperty;D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtGui;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtCore;C:\Qt\Qt5.7.0\5.7\msvc2013_64\.\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996;4718</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CSFDB;WNT;WINVER=0x0500;QT_NO_DEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CSFDB;WNT;WINVER=0x0500;QT_NO_DEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ic_pastry\renderer\JTAssistant;D:\ic_pastry\WViewer\JTAssistant;D:\ic_pastry\WViewer\JTAssistant\src;D:\ic_pastry\WViewer\JTAssistant\src\BVH;D:\ic_pastry\WViewer\JTAssistant\src\JTData;D:\ic_pastry\WViewer\JTAssistant\src\JTGui;D:\ic_pastry\WViewer\JTAssistant\src\JTVis;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc;C:\zlib-1.2.8-x64\include;D:\ic_pastry\WViewer\JTAssistant\Eigen3;D:\ic_pastry\WViewer\TKJT\src\JtAttribute;D:\ic_pastry\WViewer\TKJT\src\JtData;D:\ic_pastry\WViewer\TKJT\src\JtDecode;D:\ic_pastry\WViewer\TKJT\src\JtElement;D:\ic_pastry\WViewer\TKJT\src\JtNode;D:\ic_pastry\WViewer\TKJT\src\JtProperty;D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtGui;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtCore;C:\Qt\Qt5.7.0\5.7\msvc2013_64\.\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\ic_pastry\renderer\JTAssistant;D:\ic_pastry\WViewer\JTAssistant;D:\ic_pastry\WViewer\JTAssistant\src;D:\ic_pastry\WViewer\JTAssistant\src\BVH;D:\ic_pastry\WViewer\JTAssistant\src\JTData;D:\ic_pastry\WViewer\JTAssistant\src\JTGui;D:\ic_pastry\WViewer\JTAssistant\src\JTVis;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc;C:\zlib-1.2.8-x64\include;D:\ic_pastry\WViewer\JTAssistant\Eigen3;D:\ic_pastry\WViewer\TKJT\src\JtAttribute;D:\ic_pastry\WViewer\TKJT\src\JtData;D:\ic_pastry\WViewer\TKJT\src\JtDecode;D:\ic_pastry\WViewer\TKJT\src\JtElement;D:\ic_pastry\WViewer\TKJT\src\JtNode;D:\ic_pastry\WViewer\TKJT\src\JtProperty;D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtGui;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtCore;C:\Qt\Qt5.7.0\5.7\msvc2013_64\.\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic moc for target JTAssistant</Message>
+      <Command>setlocal
+cd D:\ic_pastry\renderer\JTAssistant
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/ic_pastry/renderer/JTAssistant/CMakeFiles/JTAssistant_automoc.dir/ MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\lib\TKernel.lib;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\lib\TKMath.lib;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\lib\intel64\vc12\tbb.lib;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\lib\intel64\vc12\tbbmalloc.lib;opengl32.lib;glu32.lib;C:\zlib-1.2.8-x64\lib\zlibd.lib;..\TKJT\MinSizeRel\TKJT.lib;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\Qt5Widgets.lib;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\lib\TKernel.lib;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\lib\TKMath.lib;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\lib\intel64\vc12\tbb.lib;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\lib\intel64\vc12\tbbmalloc.lib;C:\zlib-1.2.8-x64\lib\zlibd.lib;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\Qt5Gui.lib;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\Qt5Core.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/ic_pastry/renderer/JTAssistant/MinSizeRel/JTAssistant.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/ic_pastry/renderer/JTAssistant/MinSizeRel/JTAssistant.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>echo copy "C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\bin\TKernel.dll" "$(OutDir)"
+copy "C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\bin\TKernel.dll" "$(OutDir)"
+echo copy "C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\bin\TKMath.dll" "$(OutDir)"
+copy "C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\bin\TKMath.dll" "$(OutDir)"
+echo copy "$(OPENCV30_DIR)\x64\vc12\bin\opencv_world300d.dll" "$(OutDir)"
+copy "$(OPENCV30_DIR)\x64\vc12\bin\opencv_world310d.dll" "$(OutDir)"
+echo copy "$(SolutionDir)TKJT\$(Configuration)\TKJT.dll" "$(OutDir)"
+copy "$(SolutionDir)TKJT\$(Configuration)\TKJT.dll" "$(OutDir)"
+echo copy "C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\Qt5Widgetsd.dll" "$(OutDir)"
+copy "C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\Qt5Widgetsd.dll" "$(OutDir)"
+echo copy "C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\Qt5Guid.dll" "$(OutDir)"
+copy "C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\Qt5Guid.dll" "$(OutDir)"
+echo copy "C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\Qt5Cored.dll" "$(OutDir)"
+copy "C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\Qt5Cored.dll" "$(OutDir)"
+echo copy "C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\bin\intel64\vc12\tbbmalloc.dll" "$(OutDir)"
+copy "C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\bin\intel64\vc12\tbbmalloc.dll" "$(OutDir)"
+echo copy "C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\bin\intel64\vc12\tbb_debug.dll" "$(OutDir)"
+copy "C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\bin\intel64\vc12\tbb_debug.dll" "$(OutDir)"
+echo copy "C:\zlib-1.2.8-x64\bin\zlibd.dll" "$(OutDir)"
+copy "C:\zlib-1.2.8-x64\bin\zlibd.dll" "$(OutDir)"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\ic_pastry\renderer\JTAssistant;D:\ic_pastry\WViewer\JTAssistant;D:\ic_pastry\WViewer\JTAssistant\src;D:\ic_pastry\WViewer\JTAssistant\src\BVH;D:\ic_pastry\WViewer\JTAssistant\src\JTData;D:\ic_pastry\WViewer\JTAssistant\src\JTGui;D:\ic_pastry\WViewer\JTAssistant\src\JTVis;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc;C:\zlib-1.2.8-x64\include;D:\ic_pastry\WViewer\JTAssistant\Eigen3;D:\ic_pastry\WViewer\TKJT\src\JtAttribute;D:\ic_pastry\WViewer\TKJT\src\JtData;D:\ic_pastry\WViewer\TKJT\src\JtDecode;D:\ic_pastry\WViewer\TKJT\src\JtElement;D:\ic_pastry\WViewer\TKJT\src\JtNode;D:\ic_pastry\WViewer\TKJT\src\JtProperty;D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtGui;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtCore;C:\Qt\Qt5.7.0\5.7\msvc2013_64\.\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4718</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CSFDB;WNT;WINVER=0x0500;QT_NO_DEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CSFDB;WNT;WINVER=0x0500;QT_NO_DEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\ic_pastry\renderer\JTAssistant;D:\ic_pastry\WViewer\JTAssistant;D:\ic_pastry\WViewer\JTAssistant\src;D:\ic_pastry\WViewer\JTAssistant\src\BVH;D:\ic_pastry\WViewer\JTAssistant\src\JTData;D:\ic_pastry\WViewer\JTAssistant\src\JTGui;D:\ic_pastry\WViewer\JTAssistant\src\JTVis;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc;C:\zlib-1.2.8-x64\include;D:\ic_pastry\WViewer\JTAssistant\Eigen3;D:\ic_pastry\WViewer\TKJT\src\JtAttribute;D:\ic_pastry\WViewer\TKJT\src\JtData;D:\ic_pastry\WViewer\TKJT\src\JtDecode;D:\ic_pastry\WViewer\TKJT\src\JtElement;D:\ic_pastry\WViewer\TKJT\src\JtNode;D:\ic_pastry\WViewer\TKJT\src\JtProperty;D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtGui;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtCore;C:\Qt\Qt5.7.0\5.7\msvc2013_64\.\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\ic_pastry\renderer\JTAssistant;D:\ic_pastry\WViewer\JTAssistant;D:\ic_pastry\WViewer\JTAssistant\src;D:\ic_pastry\WViewer\JTAssistant\src\BVH;D:\ic_pastry\WViewer\JTAssistant\src\JTData;D:\ic_pastry\WViewer\JTAssistant\src\JTGui;D:\ic_pastry\WViewer\JTAssistant\src\JTVis;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc;C:\zlib-1.2.8-x64\include;D:\ic_pastry\WViewer\JTAssistant\Eigen3;D:\ic_pastry\WViewer\TKJT\src\JtAttribute;D:\ic_pastry\WViewer\TKJT\src\JtData;D:\ic_pastry\WViewer\TKJT\src\JtDecode;D:\ic_pastry\WViewer\TKJT\src\JtElement;D:\ic_pastry\WViewer\TKJT\src\JtNode;D:\ic_pastry\WViewer\TKJT\src\JtProperty;D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtGui;C:\Qt\Qt5.7.0\5.7\msvc2013_64\include\QtCore;C:\Qt\Qt5.7.0\5.7\msvc2013_64\.\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic moc for target JTAssistant</Message>
+      <Command>setlocal
+cd D:\ic_pastry\renderer\JTAssistant
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/ic_pastry/renderer/JTAssistant/CMakeFiles/JTAssistant_automoc.dir/ RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\lib\TKernel.lib;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\lib\TKMath.lib;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\lib\intel64\vc12\tbb.lib;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\lib\intel64\vc12\tbbmalloc.lib;opengl32.lib;glu32.lib;C:\zlib-1.2.8-x64\lib\zlibd.lib;..\TKJT\RelWithDebInfo\TKJT.lib;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\Qt5Widgets.lib;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\lib\TKernel.lib;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\lib\TKMath.lib;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\lib\intel64\vc12\tbb.lib;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\lib\intel64\vc12\tbbmalloc.lib;C:\zlib-1.2.8-x64\lib\zlibd.lib;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\Qt5Gui.lib;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\Qt5Core.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/ic_pastry/renderer/JTAssistant/RelWithDebInfo/JTAssistant.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/ic_pastry/renderer/JTAssistant/RelWithDebInfo/JTAssistant.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>echo copy "C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\bin\TKernel.dll" "$(OutDir)"
+copy "C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\bin\TKernel.dll" "$(OutDir)"
+echo copy "C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\bin\TKMath.dll" "$(OutDir)"
+copy "C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\bin\TKMath.dll" "$(OutDir)"
+echo copy "$(OPENCV30_DIR)\x64\vc12\bin\opencv_world300d.dll" "$(OutDir)"
+copy "$(OPENCV30_DIR)\x64\vc12\bin\opencv_world310d.dll" "$(OutDir)"
+echo copy "$(SolutionDir)TKJT\$(Configuration)\TKJT.dll" "$(OutDir)"
+copy "$(SolutionDir)TKJT\$(Configuration)\TKJT.dll" "$(OutDir)"
+echo copy "C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\Qt5Widgetsd.dll" "$(OutDir)"
+copy "C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\Qt5Widgetsd.dll" "$(OutDir)"
+echo copy "C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\Qt5Guid.dll" "$(OutDir)"
+copy "C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\Qt5Guid.dll" "$(OutDir)"
+echo copy "C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\Qt5Cored.dll" "$(OutDir)"
+copy "C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\Qt5Cored.dll" "$(OutDir)"
+echo copy "C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\bin\intel64\vc12\tbbmalloc.dll" "$(OutDir)"
+copy "C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\bin\intel64\vc12\tbbmalloc.dll" "$(OutDir)"
+echo copy "C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\bin\intel64\vc12\tbb_debug.dll" "$(OutDir)"
+copy "C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\bin\intel64\vc12\tbb_debug.dll" "$(OutDir)"
+echo copy "C:\zlib-1.2.8-x64\bin\zlibd.dll" "$(OutDir)"
+copy "C:\zlib-1.2.8-x64\bin\zlibd.dll" "$(OutDir)"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ic_pastry\WViewer\JTAssistant\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/ic_pastry/WViewer/JTAssistant/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/ic_pastry/WViewer -BD:/ic_pastry/renderer --check-stamp-file D:\ic_pastry\renderer\JTAssistant\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/ic_pastry/WViewer/JTAssistant/CMakeLists.txt;D:\ic_pastry\WViewer\JTAssistant\CMakeLists.txt;D:\ic_pastry\WViewer\CMake\FindOCCT.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QDDSPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\ic_pastry\WViewer\CMake\FindEigen3.cmake;D:\ic_pastry\WViewer\CMake\FindTBB.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\ic_pastry\WViewer\JTAssistant\JTAssistant.qrc;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders.qrc;C:\Program Files\CMake\share\cmake-3.6\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\AutogenInfo.cmake.in;D:\ic_pastry\WViewer\JTAssistant\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\ic_pastry\renderer\JTAssistant\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/ic_pastry/WViewer/JTAssistant/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/ic_pastry/WViewer -BD:/ic_pastry/renderer --check-stamp-file D:\ic_pastry\renderer\JTAssistant\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/ic_pastry/WViewer/JTAssistant/CMakeLists.txt;D:\ic_pastry\WViewer\JTAssistant\CMakeLists.txt;D:\ic_pastry\WViewer\CMake\FindOCCT.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QDDSPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\ic_pastry\WViewer\CMake\FindEigen3.cmake;D:\ic_pastry\WViewer\CMake\FindTBB.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\ic_pastry\WViewer\JTAssistant\JTAssistant.qrc;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders.qrc;C:\Program Files\CMake\share\cmake-3.6\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\AutogenInfo.cmake.in;D:\ic_pastry\WViewer\JTAssistant\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\ic_pastry\renderer\JTAssistant\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/ic_pastry/WViewer/JTAssistant/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/ic_pastry/WViewer -BD:/ic_pastry/renderer --check-stamp-file D:\ic_pastry\renderer\JTAssistant\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/ic_pastry/WViewer/JTAssistant/CMakeLists.txt;D:\ic_pastry\WViewer\JTAssistant\CMakeLists.txt;D:\ic_pastry\WViewer\CMake\FindOCCT.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QDDSPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\ic_pastry\WViewer\CMake\FindEigen3.cmake;D:\ic_pastry\WViewer\CMake\FindTBB.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\ic_pastry\WViewer\JTAssistant\JTAssistant.qrc;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders.qrc;C:\Program Files\CMake\share\cmake-3.6\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\AutogenInfo.cmake.in;D:\ic_pastry\WViewer\JTAssistant\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\ic_pastry\renderer\JTAssistant\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/ic_pastry/WViewer/JTAssistant/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/ic_pastry/WViewer -BD:/ic_pastry/renderer --check-stamp-file D:\ic_pastry\renderer\JTAssistant\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/ic_pastry/WViewer/JTAssistant/CMakeLists.txt;D:\ic_pastry\WViewer\JTAssistant\CMakeLists.txt;D:\ic_pastry\WViewer\CMake\FindOCCT.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QDDSPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\Qt5.7.0\5.7\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\ic_pastry\WViewer\CMake\FindEigen3.cmake;D:\ic_pastry\WViewer\CMake\FindTBB.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\ic_pastry\WViewer\JTAssistant\JTAssistant.qrc;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders.qrc;C:\Program Files\CMake\share\cmake-3.6\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\InstallRequiredSystemLibraries.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\AutogenInfo.cmake.in;D:\ic_pastry\WViewer\JTAssistant\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\ic_pastry\renderer\JTAssistant\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ic_pastry\WViewer\JTAssistant\src\JTGui\MainWindow.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating gen/ui_MainWindow.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\uic.exe -o D:/ic_pastry/renderer/JTAssistant/gen/ui_MainWindow.h D:/ic_pastry/WViewer/JTAssistant/src/JTGui/MainWindow.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/ic_pastry/WViewer/JTAssistant/src/JTGui/MainWindow.ui;D:\ic_pastry\WViewer\JTAssistant\src\JTGui\MainWindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\ic_pastry\renderer\JTAssistant\gen\ui_MainWindow.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating gen/ui_MainWindow.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\uic.exe -o D:/ic_pastry/renderer/JTAssistant/gen/ui_MainWindow.h D:/ic_pastry/WViewer/JTAssistant/src/JTGui/MainWindow.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/ic_pastry/WViewer/JTAssistant/src/JTGui/MainWindow.ui;D:\ic_pastry\WViewer\JTAssistant\src\JTGui\MainWindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\ic_pastry\renderer\JTAssistant\gen\ui_MainWindow.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating gen/ui_MainWindow.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\uic.exe -o D:/ic_pastry/renderer/JTAssistant/gen/ui_MainWindow.h D:/ic_pastry/WViewer/JTAssistant/src/JTGui/MainWindow.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/ic_pastry/WViewer/JTAssistant/src/JTGui/MainWindow.ui;D:\ic_pastry\WViewer\JTAssistant\src\JTGui\MainWindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\ic_pastry\renderer\JTAssistant\gen\ui_MainWindow.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating gen/ui_MainWindow.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\uic.exe -o D:/ic_pastry/renderer/JTAssistant/gen/ui_MainWindow.h D:/ic_pastry/WViewer/JTAssistant/src/JTGui/MainWindow.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/ic_pastry/WViewer/JTAssistant/src/JTGui/MainWindow.ui;D:\ic_pastry\WViewer\JTAssistant\src\JTGui\MainWindow.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\ic_pastry\renderer\JTAssistant\gen\ui_MainWindow.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ic_pastry\WViewer\JTAssistant\JTAssistant.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating qrc_JTAssistant.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\rcc.exe --name JTAssistant --output D:/ic_pastry/renderer/JTAssistant/qrc_JTAssistant.cpp D:/ic_pastry/WViewer/JTAssistant/JTAssistant.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/ic_pastry/WViewer/JTAssistant/JTAssistant.qrc;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\bgShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\bgShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\default.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\default.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\idShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\idShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\pcShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\pcShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\lineShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\lineShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\texQuadShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\texQuadShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\trihedronShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\trihedronShader.vert;D:\ic_pastry\WViewer\JTAssistant\res\fonts\OpenSans-Regular.ttf;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\Axes.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\back36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\bottom36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\Fitall.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\folder.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\folder_b.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\front36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\gear.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\group.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\hline.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\icon.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\instance.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\Iso.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\left36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\lod.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\Move.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\rangelod.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\resetview36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\right36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\Rotate.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\screenshot.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\shape.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\shapelod.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\top36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\Zoom.png;D:\ic_pastry\WViewer\JTAssistant\JTAssistant.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\ic_pastry\renderer\JTAssistant\qrc_JTAssistant.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating qrc_JTAssistant.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\rcc.exe --name JTAssistant --output D:/ic_pastry/renderer/JTAssistant/qrc_JTAssistant.cpp D:/ic_pastry/WViewer/JTAssistant/JTAssistant.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/ic_pastry/WViewer/JTAssistant/JTAssistant.qrc;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\bgShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\bgShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\default.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\default.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\idShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\idShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\pcShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\pcShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\lineShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\lineShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\texQuadShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\texQuadShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\trihedronShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\trihedronShader.vert;D:\ic_pastry\WViewer\JTAssistant\res\fonts\OpenSans-Regular.ttf;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\Axes.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\back36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\bottom36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\Fitall.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\folder.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\folder_b.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\front36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\gear.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\group.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\hline.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\icon.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\instance.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\Iso.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\left36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\lod.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\Move.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\rangelod.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\resetview36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\right36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\Rotate.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\screenshot.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\shape.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\shapelod.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\top36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\Zoom.png;D:\ic_pastry\WViewer\JTAssistant\JTAssistant.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\ic_pastry\renderer\JTAssistant\qrc_JTAssistant.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating qrc_JTAssistant.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\rcc.exe --name JTAssistant --output D:/ic_pastry/renderer/JTAssistant/qrc_JTAssistant.cpp D:/ic_pastry/WViewer/JTAssistant/JTAssistant.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/ic_pastry/WViewer/JTAssistant/JTAssistant.qrc;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\bgShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\bgShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\default.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\default.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\idShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\idShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\pcShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\pcShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\lineShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\lineShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\texQuadShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\texQuadShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\trihedronShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\trihedronShader.vert;D:\ic_pastry\WViewer\JTAssistant\res\fonts\OpenSans-Regular.ttf;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\Axes.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\back36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\bottom36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\Fitall.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\folder.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\folder_b.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\front36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\gear.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\group.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\hline.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\icon.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\instance.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\Iso.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\left36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\lod.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\Move.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\rangelod.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\resetview36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\right36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\Rotate.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\screenshot.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\shape.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\shapelod.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\top36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\Zoom.png;D:\ic_pastry\WViewer\JTAssistant\JTAssistant.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\ic_pastry\renderer\JTAssistant\qrc_JTAssistant.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating qrc_JTAssistant.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\rcc.exe --name JTAssistant --output D:/ic_pastry/renderer/JTAssistant/qrc_JTAssistant.cpp D:/ic_pastry/WViewer/JTAssistant/JTAssistant.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/ic_pastry/WViewer/JTAssistant/JTAssistant.qrc;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\bgShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\bgShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\default.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\default.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\idShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\idShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\pcShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\pcShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\lineShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\lineShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\texQuadShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\texQuadShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\trihedronShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\trihedronShader.vert;D:\ic_pastry\WViewer\JTAssistant\res\fonts\OpenSans-Regular.ttf;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\Axes.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\back36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\bottom36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\Fitall.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\folder.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\folder_b.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\front36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\gear.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\group.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\hline.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\icon.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\instance.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\Iso.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\left36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\lod.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\Move.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\rangelod.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\resetview36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\right36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\Rotate.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\screenshot.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\shape.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\shapelod.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\top36t.png;D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\Zoom.png;D:\ic_pastry\WViewer\JTAssistant\JTAssistant.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\ic_pastry\renderer\JTAssistant\qrc_JTAssistant.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating qrc_Shaders.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\rcc.exe --name Shaders --output D:/ic_pastry/renderer/JTAssistant/qrc_Shaders.cpp D:/ic_pastry/WViewer/JTAssistant/src/JTVis/Shaders.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/ic_pastry/WViewer/JTAssistant/src/JTVis/Shaders.qrc;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\default.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\default.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\lineShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\lineShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\bgShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\bgShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\idShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\idShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\pcShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\pcShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\trihedronShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\trihedronShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\texQuadShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\texQuadShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\ic_pastry\renderer\JTAssistant\qrc_Shaders.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating qrc_Shaders.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\rcc.exe --name Shaders --output D:/ic_pastry/renderer/JTAssistant/qrc_Shaders.cpp D:/ic_pastry/WViewer/JTAssistant/src/JTVis/Shaders.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/ic_pastry/WViewer/JTAssistant/src/JTVis/Shaders.qrc;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\default.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\default.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\lineShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\lineShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\bgShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\bgShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\idShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\idShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\pcShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\pcShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\trihedronShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\trihedronShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\texQuadShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\texQuadShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\ic_pastry\renderer\JTAssistant\qrc_Shaders.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating qrc_Shaders.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\rcc.exe --name Shaders --output D:/ic_pastry/renderer/JTAssistant/qrc_Shaders.cpp D:/ic_pastry/WViewer/JTAssistant/src/JTVis/Shaders.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/ic_pastry/WViewer/JTAssistant/src/JTVis/Shaders.qrc;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\default.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\default.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\lineShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\lineShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\bgShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\bgShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\idShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\idShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\pcShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\pcShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\trihedronShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\trihedronShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\texQuadShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\texQuadShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\ic_pastry\renderer\JTAssistant\qrc_Shaders.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating qrc_Shaders.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Qt\Qt5.7.0\5.7\msvc2013_64\bin\rcc.exe --name Shaders --output D:/ic_pastry/renderer/JTAssistant/qrc_Shaders.cpp D:/ic_pastry/WViewer/JTAssistant/src/JTVis/Shaders.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/ic_pastry/WViewer/JTAssistant/src/JTVis/Shaders.qrc;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\default.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\default.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\lineShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\lineShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\bgShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\bgShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\idShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\idShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\pcShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\pcShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\trihedronShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\trihedronShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\texQuadShader.frag;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders\texQuadShader.vert;D:\ic_pastry\WViewer\JTAssistant\src\JTVis\Shaders.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\ic_pastry\renderer\JTAssistant\qrc_Shaders.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\BVH\BVH_BinnedBuilder.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\BVH\BVH_Box.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\BVH\BVH_Builder.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\BVH\BVH_Geometry.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\BVH\BVH_LinearBuilder.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\BVH\BVH_Object.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\BVH\BVH_ObjectSet.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\BVH\BVH_PrimitiveSet.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\BVH\BVH_Properties.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\BVH\BVH_QueueBuilder.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\BVH\BVH_Set.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\BVH\BVH_Sorter.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\BVH\BVH_SpatialMedianBuilder.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\BVH\BVH_SweepPlaneBuilder.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\BVH\BVH_Tree.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\BVH\BVH_Triangulation.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\BVH\BVH_Types.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTCommon_Utils.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTData\JTData_Attribute.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTData\JTData_DataLoader.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTData\JTData_Element.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTData\JTData_GeometrySource.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTData\JTData_JSON.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTData\JTData_Node.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTData\JTData_SceneGraph.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTGui\JTGui_AboutDialog.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTGui\JTGui_MainWindow.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTGui\JTGui_SceneGraphTree.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTGui\JTGui_Window.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTGui\JTShot.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_AABBGeometry.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_BvhGeometryWrapper.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_CameraTransition.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_Frustum.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_GraphicObject.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_HudRenderer.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_PartGeometry.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_PartNode.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_QuadGeometry.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_Scene.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_ScenegraphTasks.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_TargetedCamera.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_TrihedronGeometry.hxx" />
+    <ClInclude Include="D:\ic_pastry\renderer\JTAssistant\gen\ui_MainWindow.h" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\BVH\BVH.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\BVH\BVH_Properties.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\JTData\JTData_Attribute.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\JTData\JTData_DataLoader.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\JTData\JTData_Element.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\JTData\JTData_GeometrySource.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\JTData\JTData_JSON.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\JTData\JTData_Node.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\JTData\JTData_SceneGraph.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\JTGui\JTGui_AboutDialog.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\JTGui\JTGui_MainWindow.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\JTGui\JTGui_SceneGraphTree.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\JTGui\JTGui_Window.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\JTGui\JTShot.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_AABBGeometry.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_BvhGeometryWrapper.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_CameraTransition.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_Frustum.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_HudRenderer.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_PartGeometry.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_PartNode.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_QuadGeometry.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_Scene.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_ScenegraphTasks.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_TargetedCamera.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\JTVis\JTVis_TrihedronGeometry.cxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\JTAssistant\src\main.cxx" />
+    <ClCompile Include="D:\ic_pastry\renderer\JTAssistant\qrc_JTAssistant.cpp" />
+    <ClCompile Include="D:\ic_pastry\renderer\JTAssistant\qrc_Shaders.cpp" />
+    <ResourceCompile Include="D:\ic_pastry\WViewer\JTAssistant\res\icons\desktop\icon.rc" />
+    <ClCompile Include="D:\ic_pastry\renderer\JTAssistant\JTAssistant_automoc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/ic_pastry/renderer/ZERO_CHECK.vcxproj">
+      <Project>B2D95015-771A-3E91-B445-AE1979D7ABB9</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ic_pastry/renderer/TKJT/TKJT.vcxproj">
+      <Project>526D77B2-F88B-322F-8F25-C740173348E8</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,25 @@
+# Build artifacts
+**/Debug/
+**/Release/
+**/x64/
+**/build/
+*.obj
+*.pdb
+*.ilk
+*.lib
+*.dll
+*.exe
+*.cache
+*.deps
+*.tlog
+*.lastbuildstate
+
+# Large generated / model artifacts
+*.warehouse
+*.dep
+*.dat
+
+# IDE / generated
+.vs/
+*.user
+*.suo

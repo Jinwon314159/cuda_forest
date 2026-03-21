@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\ic_pastry\renderer\CMakeFiles\c7c086c46fc1584e06314bdc51992922\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{0441139A-C21A-328A-ABC3-8F97C25E547B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

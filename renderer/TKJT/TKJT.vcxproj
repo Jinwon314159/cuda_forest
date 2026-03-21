@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{526D77B2-F88B-322F-8F25-C740173348E8}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>TKJT</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\ic_pastry\renderer\TKJT\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TKJT.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TKJT</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\ic_pastry\renderer\TKJT\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TKJT.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TKJT</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\ic_pastry\renderer\TKJT\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TKJT.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TKJT</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\ic_pastry\renderer\TKJT\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TKJT.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TKJT</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\include;C:\zlib-1.2.8-x64\include;D:\ic_pastry\WViewer\TKJT\src\JtAttribute;D:\ic_pastry\WViewer\TKJT\src\JtData;D:\ic_pastry\WViewer\TKJT\src\JtDecode;D:\ic_pastry\WViewer\TKJT\src\JtElement;D:\ic_pastry\WViewer\TKJT\src\JtNode;D:\ic_pastry\WViewer\TKJT\src\JtProperty;D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;DEB;CSFDB;WNT;CMAKE_INTDIR="Debug";TKJT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;DEB;CSFDB;WNT;CMAKE_INTDIR=\"Debug\";TKJT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\include;C:\zlib-1.2.8-x64\include;D:\ic_pastry\WViewer\TKJT\src\JtAttribute;D:\ic_pastry\WViewer\TKJT\src\JtData;D:\ic_pastry\WViewer\TKJT\src\JtDecode;D:\ic_pastry\WViewer\TKJT\src\JtElement;D:\ic_pastry\WViewer\TKJT\src\JtNode;D:\ic_pastry\WViewer\TKJT\src\JtProperty;D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\include;C:\zlib-1.2.8-x64\include;D:\ic_pastry\WViewer\TKJT\src\JtAttribute;D:\ic_pastry\WViewer\TKJT\src\JtData;D:\ic_pastry\WViewer\TKJT\src\JtDecode;D:\ic_pastry\WViewer\TKJT\src\JtElement;D:\ic_pastry\WViewer\TKJT\src\JtNode;D:\ic_pastry\WViewer\TKJT\src\JtProperty;D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\lib\TKernel.lib;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\lib\TKMath.lib;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\lib\intel64\vc12\tbb_debug.lib;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\lib\intel64\vc12\tbbmalloc_debug.lib;C:\zlib-1.2.8-x64\lib\zlibd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/ic_pastry/renderer/TKJT/Debug/TKJT.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/ic_pastry/renderer/TKJT/Debug/TKJT.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\include;C:\zlib-1.2.8-x64\include;D:\ic_pastry\WViewer\TKJT\src\JtAttribute;D:\ic_pastry\WViewer\TKJT\src\JtData;D:\ic_pastry\WViewer\TKJT\src\JtDecode;D:\ic_pastry\WViewer\TKJT\src\JtElement;D:\ic_pastry\WViewer\TKJT\src\JtNode;D:\ic_pastry\WViewer\TKJT\src\JtProperty;D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;No_Exception;CSFDB;WNT;CMAKE_INTDIR="Release";TKJT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;No_Exception;CSFDB;WNT;CMAKE_INTDIR=\"Release\";TKJT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\include;C:\zlib-1.2.8-x64\include;D:\ic_pastry\WViewer\TKJT\src\JtAttribute;D:\ic_pastry\WViewer\TKJT\src\JtData;D:\ic_pastry\WViewer\TKJT\src\JtDecode;D:\ic_pastry\WViewer\TKJT\src\JtElement;D:\ic_pastry\WViewer\TKJT\src\JtNode;D:\ic_pastry\WViewer\TKJT\src\JtProperty;D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\include;C:\zlib-1.2.8-x64\include;D:\ic_pastry\WViewer\TKJT\src\JtAttribute;D:\ic_pastry\WViewer\TKJT\src\JtData;D:\ic_pastry\WViewer\TKJT\src\JtDecode;D:\ic_pastry\WViewer\TKJT\src\JtElement;D:\ic_pastry\WViewer\TKJT\src\JtNode;D:\ic_pastry\WViewer\TKJT\src\JtProperty;D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\lib\TKernel.lib;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\lib\TKMath.lib;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\lib\intel64\vc12\tbb.lib;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\lib\intel64\vc12\tbbmalloc.lib;C:\zlib-1.2.8-x64\lib\zlibd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/ic_pastry/renderer/TKJT/Release/TKJT.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/ic_pastry/renderer/TKJT/Release/TKJT.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\include;C:\zlib-1.2.8-x64\include;D:\ic_pastry\WViewer\TKJT\src\JtAttribute;D:\ic_pastry\WViewer\TKJT\src\JtData;D:\ic_pastry\WViewer\TKJT\src\JtDecode;D:\ic_pastry\WViewer\TKJT\src\JtElement;D:\ic_pastry\WViewer\TKJT\src\JtNode;D:\ic_pastry\WViewer\TKJT\src\JtProperty;D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CSFDB;WNT;CMAKE_INTDIR="MinSizeRel";TKJT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CSFDB;WNT;CMAKE_INTDIR=\"MinSizeRel\";TKJT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\include;C:\zlib-1.2.8-x64\include;D:\ic_pastry\WViewer\TKJT\src\JtAttribute;D:\ic_pastry\WViewer\TKJT\src\JtData;D:\ic_pastry\WViewer\TKJT\src\JtDecode;D:\ic_pastry\WViewer\TKJT\src\JtElement;D:\ic_pastry\WViewer\TKJT\src\JtNode;D:\ic_pastry\WViewer\TKJT\src\JtProperty;D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\include;C:\zlib-1.2.8-x64\include;D:\ic_pastry\WViewer\TKJT\src\JtAttribute;D:\ic_pastry\WViewer\TKJT\src\JtData;D:\ic_pastry\WViewer\TKJT\src\JtDecode;D:\ic_pastry\WViewer\TKJT\src\JtElement;D:\ic_pastry\WViewer\TKJT\src\JtNode;D:\ic_pastry\WViewer\TKJT\src\JtProperty;D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\lib\TKernel.lib;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\lib\TKMath.lib;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\lib\intel64\vc12\tbb.lib;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\lib\intel64\vc12\tbbmalloc.lib;C:\zlib-1.2.8-x64\lib\zlibd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/ic_pastry/renderer/TKJT/MinSizeRel/TKJT.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/ic_pastry/renderer/TKJT/MinSizeRel/TKJT.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\include;C:\zlib-1.2.8-x64\include;D:\ic_pastry\WViewer\TKJT\src\JtAttribute;D:\ic_pastry\WViewer\TKJT\src\JtData;D:\ic_pastry\WViewer\TKJT\src\JtDecode;D:\ic_pastry\WViewer\TKJT\src\JtElement;D:\ic_pastry\WViewer\TKJT\src\JtNode;D:\ic_pastry\WViewer\TKJT\src\JtProperty;D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CSFDB;WNT;CMAKE_INTDIR="RelWithDebInfo";TKJT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CSFDB;WNT;CMAKE_INTDIR=\"RelWithDebInfo\";TKJT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\include;C:\zlib-1.2.8-x64\include;D:\ic_pastry\WViewer\TKJT\src\JtAttribute;D:\ic_pastry\WViewer\TKJT\src\JtData;D:\ic_pastry\WViewer\TKJT\src\JtDecode;D:\ic_pastry\WViewer\TKJT\src\JtElement;D:\ic_pastry\WViewer\TKJT\src\JtNode;D:\ic_pastry\WViewer\TKJT\src\JtProperty;D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\include;C:\zlib-1.2.8-x64\include;D:\ic_pastry\WViewer\TKJT\src\JtAttribute;D:\ic_pastry\WViewer\TKJT\src\JtData;D:\ic_pastry\WViewer\TKJT\src\JtDecode;D:\ic_pastry\WViewer\TKJT\src\JtElement;D:\ic_pastry\WViewer\TKJT\src\JtNode;D:\ic_pastry\WViewer\TKJT\src\JtProperty;D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\lib\TKernel.lib;C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\lib\TKMath.lib;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\lib\intel64\vc12\tbb.lib;C:\OpenCASCADE6.9.1-vc12-64\tbb42_20140416oss\lib\intel64\vc12\tbbmalloc.lib;C:\zlib-1.2.8-x64\lib\zlibd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/ic_pastry/renderer/TKJT/RelWithDebInfo/TKJT.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/ic_pastry/renderer/TKJT/RelWithDebInfo/TKJT.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ic_pastry\WViewer\TKJT\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/ic_pastry/WViewer/TKJT/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/ic_pastry/WViewer -BD:/ic_pastry/renderer --check-stamp-file D:\ic_pastry\renderer\TKJT\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/ic_pastry/WViewer/TKJT/CMakeLists.txt;D:\ic_pastry\WViewer\TKJT\CMakeLists.txt;D:\ic_pastry\WViewer\CMake\FindOCCT.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\ic_pastry\WViewer\CMake\FindTBB.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\ic_pastry\WViewer\TKJT\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\ic_pastry\renderer\TKJT\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/ic_pastry/WViewer/TKJT/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/ic_pastry/WViewer -BD:/ic_pastry/renderer --check-stamp-file D:\ic_pastry\renderer\TKJT\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/ic_pastry/WViewer/TKJT/CMakeLists.txt;D:\ic_pastry\WViewer\TKJT\CMakeLists.txt;D:\ic_pastry\WViewer\CMake\FindOCCT.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\ic_pastry\WViewer\CMake\FindTBB.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\ic_pastry\WViewer\TKJT\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\ic_pastry\renderer\TKJT\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/ic_pastry/WViewer/TKJT/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/ic_pastry/WViewer -BD:/ic_pastry/renderer --check-stamp-file D:\ic_pastry\renderer\TKJT\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/ic_pastry/WViewer/TKJT/CMakeLists.txt;D:\ic_pastry\WViewer\TKJT\CMakeLists.txt;D:\ic_pastry\WViewer\CMake\FindOCCT.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\ic_pastry\WViewer\CMake\FindTBB.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\ic_pastry\WViewer\TKJT\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\ic_pastry\renderer\TKJT\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/ic_pastry/WViewer/TKJT/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/ic_pastry/WViewer -BD:/ic_pastry/renderer --check-stamp-file D:\ic_pastry\renderer\TKJT\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/ic_pastry/WViewer/TKJT/CMakeLists.txt;D:\ic_pastry\WViewer\TKJT\CMakeLists.txt;D:\ic_pastry\WViewer\CMake\FindOCCT.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\ic_pastry\WViewer\CMake\FindTBB.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;D:\ic_pastry\WViewer\TKJT\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\ic_pastry\renderer\TKJT\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtAttribute\JtAttribute_Base.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtAttribute\JtAttribute_GeometricTransform.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtAttribute\JtAttribute_Material.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_ByteSwap.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_ClassInfo.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_CompVector.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_CompVectorData.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_CompVectorRef.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_DeferredObject.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_FileReader.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Inflate.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Message.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Model.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Object.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Parallel.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Reader.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_ReaderInterface.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_SingleHandle.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Types.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Vector.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_VectorData.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_VectorMover.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_VectorRef.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_BitReader.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDPScheduler.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Arithmetic.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Bitlength.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Bitlength2.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Bits.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Chopper.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Huffman.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Null.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_MeshCoderDriver.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_ProbContext.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Unpack.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_VertexData.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_VertexData_Deering.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_VertexData_ExpMant.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_VertexData_Quantized.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtElement\JtElement_MetaData_PMIManager.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtElement\JtElement_ShapeLOD_Base.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtElement\JtElement_ShapeLOD_TriStripSet.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtElement\JtElement_ShapeLOD_Vertex.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtElement\JtElement_XTBRep.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Base.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Group.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Instance.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_LOD.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_MetaData.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Part.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Partition.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_RangeLOD.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Shape_Base.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Shape_TriStripSet.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Shape_Vertex.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtProperty\JtProperty_Base.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtProperty\JtProperty_LateLoaded.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtProperty\JtProperty_String.hxx" />
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS\JtToTopoDS_Builder.hxx" />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtAttribute\JtAttribute_Base.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtAttribute\JtAttribute_GeometricTransform.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtAttribute\JtAttribute_Material.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_DeferredObject.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_FileReader.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Inflate.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Model.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Object.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Reader.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Types.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_BitReader.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Arithmetic.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Bitlength.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Bitlength2.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Bits.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Chopper.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Huffman.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Null.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_MeshCoderDriver.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_ProbContext.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Unpack.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_VertexData.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_VertexData_Deering.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_VertexData_ExpMant.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_VertexData_Quantized.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtElement\JtElement_MetaData_PMIManager.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtElement\JtElement_ShapeLOD_Base.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtElement\JtElement_ShapeLOD_TriStripSet.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtElement\JtElement_ShapeLOD_Vertex.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtElement\JtElement_XTBRep.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Base.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Group.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Instance.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_LOD.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_MetaData.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Part.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Partition.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_RangeLOD.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Shape_Base.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Shape_TriStripSet.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Shape_Vertex.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtProperty\JtProperty_Base.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtProperty\JtProperty_LateLoaded.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtProperty\JtProperty_String.cxx"  />
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS\JtToTopoDS_Builder.cxx"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/ic_pastry/renderer/ZERO_CHECK.vcxproj">
+      <Project>B2D95015-771A-3E91-B445-AE1979D7ABB9</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

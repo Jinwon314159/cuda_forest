@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtAttribute\JtAttribute_Base.cxx">
+      <Filter>Source Files\JtAttribute</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtAttribute\JtAttribute_GeometricTransform.cxx">
+      <Filter>Source Files\JtAttribute</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtAttribute\JtAttribute_Material.cxx">
+      <Filter>Source Files\JtAttribute</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_DeferredObject.cxx">
+      <Filter>Source Files\JtData</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_FileReader.cxx">
+      <Filter>Source Files\JtData</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Inflate.cxx">
+      <Filter>Source Files\JtData</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Model.cxx">
+      <Filter>Source Files\JtData</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Object.cxx">
+      <Filter>Source Files\JtData</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Reader.cxx">
+      <Filter>Source Files\JtData</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Types.cxx">
+      <Filter>Source Files\JtData</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_BitReader.cxx">
+      <Filter>Source Files\JtDecode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP.cxx">
+      <Filter>Source Files\JtDecode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Arithmetic.cxx">
+      <Filter>Source Files\JtDecode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Bitlength.cxx">
+      <Filter>Source Files\JtDecode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Bitlength2.cxx">
+      <Filter>Source Files\JtDecode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Bits.cxx">
+      <Filter>Source Files\JtDecode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Chopper.cxx">
+      <Filter>Source Files\JtDecode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Huffman.cxx">
+      <Filter>Source Files\JtDecode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Null.cxx">
+      <Filter>Source Files\JtDecode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_MeshCoderDriver.cxx">
+      <Filter>Source Files\JtDecode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_ProbContext.cxx">
+      <Filter>Source Files\JtDecode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Unpack.cxx">
+      <Filter>Source Files\JtDecode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_VertexData.cxx">
+      <Filter>Source Files\JtDecode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_VertexData_Deering.cxx">
+      <Filter>Source Files\JtDecode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_VertexData_ExpMant.cxx">
+      <Filter>Source Files\JtDecode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_VertexData_Quantized.cxx">
+      <Filter>Source Files\JtDecode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtElement\JtElement_MetaData_PMIManager.cxx">
+      <Filter>Source Files\JtElement</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtElement\JtElement_ShapeLOD_Base.cxx">
+      <Filter>Source Files\JtElement</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtElement\JtElement_ShapeLOD_TriStripSet.cxx">
+      <Filter>Source Files\JtElement</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtElement\JtElement_ShapeLOD_Vertex.cxx">
+      <Filter>Source Files\JtElement</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtElement\JtElement_XTBRep.cxx">
+      <Filter>Source Files\JtElement</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Base.cxx">
+      <Filter>Source Files\JtNode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Group.cxx">
+      <Filter>Source Files\JtNode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Instance.cxx">
+      <Filter>Source Files\JtNode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_LOD.cxx">
+      <Filter>Source Files\JtNode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_MetaData.cxx">
+      <Filter>Source Files\JtNode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Part.cxx">
+      <Filter>Source Files\JtNode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Partition.cxx">
+      <Filter>Source Files\JtNode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_RangeLOD.cxx">
+      <Filter>Source Files\JtNode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Shape_Base.cxx">
+      <Filter>Source Files\JtNode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Shape_TriStripSet.cxx">
+      <Filter>Source Files\JtNode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Shape_Vertex.cxx">
+      <Filter>Source Files\JtNode</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtProperty\JtProperty_Base.cxx">
+      <Filter>Source Files\JtProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtProperty\JtProperty_LateLoaded.cxx">
+      <Filter>Source Files\JtProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtProperty\JtProperty_String.cxx">
+      <Filter>Source Files\JtProperty</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS\JtToTopoDS_Builder.cxx">
+      <Filter>Source Files\JtToTopoDS</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtAttribute\JtAttribute_Base.hxx">
+      <Filter>Header Files\JtAttribute</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtAttribute\JtAttribute_GeometricTransform.hxx">
+      <Filter>Header Files\JtAttribute</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtAttribute\JtAttribute_Material.hxx">
+      <Filter>Header Files\JtAttribute</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_ByteSwap.hxx">
+      <Filter>Header Files\JtData</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_ClassInfo.hxx">
+      <Filter>Header Files\JtData</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_CompVector.hxx">
+      <Filter>Header Files\JtData</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_CompVectorData.hxx">
+      <Filter>Header Files\JtData</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_CompVectorRef.hxx">
+      <Filter>Header Files\JtData</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_DeferredObject.hxx">
+      <Filter>Header Files\JtData</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_FileReader.hxx">
+      <Filter>Header Files\JtData</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Inflate.hxx">
+      <Filter>Header Files\JtData</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Message.hxx">
+      <Filter>Header Files\JtData</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Model.hxx">
+      <Filter>Header Files\JtData</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Object.hxx">
+      <Filter>Header Files\JtData</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Parallel.hxx">
+      <Filter>Header Files\JtData</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Reader.hxx">
+      <Filter>Header Files\JtData</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_ReaderInterface.hxx">
+      <Filter>Header Files\JtData</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_SingleHandle.hxx">
+      <Filter>Header Files\JtData</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Types.hxx">
+      <Filter>Header Files\JtData</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_Vector.hxx">
+      <Filter>Header Files\JtData</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_VectorData.hxx">
+      <Filter>Header Files\JtData</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_VectorMover.hxx">
+      <Filter>Header Files\JtData</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtData\JtData_VectorRef.hxx">
+      <Filter>Header Files\JtData</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_BitReader.hxx">
+      <Filter>Header Files\JtDecode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP.hxx">
+      <Filter>Header Files\JtDecode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDPScheduler.hxx">
+      <Filter>Header Files\JtDecode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Arithmetic.hxx">
+      <Filter>Header Files\JtDecode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Bitlength.hxx">
+      <Filter>Header Files\JtDecode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Bitlength2.hxx">
+      <Filter>Header Files\JtDecode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Bits.hxx">
+      <Filter>Header Files\JtDecode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Chopper.hxx">
+      <Filter>Header Files\JtDecode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Huffman.hxx">
+      <Filter>Header Files\JtDecode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Int32CDP_Null.hxx">
+      <Filter>Header Files\JtDecode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_MeshCoderDriver.hxx">
+      <Filter>Header Files\JtDecode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_ProbContext.hxx">
+      <Filter>Header Files\JtDecode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_Unpack.hxx">
+      <Filter>Header Files\JtDecode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_VertexData.hxx">
+      <Filter>Header Files\JtDecode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_VertexData_Deering.hxx">
+      <Filter>Header Files\JtDecode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_VertexData_ExpMant.hxx">
+      <Filter>Header Files\JtDecode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtDecode\JtDecode_VertexData_Quantized.hxx">
+      <Filter>Header Files\JtDecode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtElement\JtElement_MetaData_PMIManager.hxx">
+      <Filter>Header Files\JtElement</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtElement\JtElement_ShapeLOD_Base.hxx">
+      <Filter>Header Files\JtElement</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtElement\JtElement_ShapeLOD_TriStripSet.hxx">
+      <Filter>Header Files\JtElement</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtElement\JtElement_ShapeLOD_Vertex.hxx">
+      <Filter>Header Files\JtElement</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtElement\JtElement_XTBRep.hxx">
+      <Filter>Header Files\JtElement</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Base.hxx">
+      <Filter>Header Files\JtNode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Group.hxx">
+      <Filter>Header Files\JtNode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Instance.hxx">
+      <Filter>Header Files\JtNode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_LOD.hxx">
+      <Filter>Header Files\JtNode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_MetaData.hxx">
+      <Filter>Header Files\JtNode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Part.hxx">
+      <Filter>Header Files\JtNode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Partition.hxx">
+      <Filter>Header Files\JtNode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_RangeLOD.hxx">
+      <Filter>Header Files\JtNode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Shape_Base.hxx">
+      <Filter>Header Files\JtNode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Shape_TriStripSet.hxx">
+      <Filter>Header Files\JtNode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtNode\JtNode_Shape_Vertex.hxx">
+      <Filter>Header Files\JtNode</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtProperty\JtProperty_Base.hxx">
+      <Filter>Header Files\JtProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtProperty\JtProperty_LateLoaded.hxx">
+      <Filter>Header Files\JtProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtProperty\JtProperty_String.hxx">
+      <Filter>Header Files\JtProperty</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ic_pastry\WViewer\TKJT\src\JtToTopoDS\JtToTopoDS_Builder.hxx">
+      <Filter>Header Files\JtToTopoDS</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ic_pastry\WViewer\TKJT\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6ED0B3B6-8B8D-3A5E-B392-95BE3C9EC639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B9A80EAE-4326-3C20-8BBD-36B509DF04E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\JtAttribute">
+      <UniqueIdentifier>{1FFB9C6C-3B0B-3F7C-8927-A33429C3ED77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\JtData">
+      <UniqueIdentifier>{56B9B746-3413-323C-B3AB-859835E6B6A7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\JtDecode">
+      <UniqueIdentifier>{151F38EC-5831-32A6-B771-4411127BD426}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\JtElement">
+      <UniqueIdentifier>{66474D04-6CC9-3215-8593-4578D736C68C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\JtNode">
+      <UniqueIdentifier>{223365E4-4B4B-377B-AFDC-5B3AC523F884}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\JtProperty">
+      <UniqueIdentifier>{E9069CF3-83C8-34EC-A853-B597A98B45E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\JtToTopoDS">
+      <UniqueIdentifier>{CB868090-2828-355A-99B5-4FCA7AD4527D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\JtAttribute">
+      <UniqueIdentifier>{7C10A1F5-CC4F-3D04-A732-ACBE002D2E98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\JtData">
+      <UniqueIdentifier>{1B73A301-CE29-3F78-89AC-3CE8E2E26F02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\JtDecode">
+      <UniqueIdentifier>{E85CF9A3-F165-3036-A4AD-991DDAD3CBA6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\JtElement">
+      <UniqueIdentifier>{4E92C1D8-3E85-3845-99BB-09F6EF6AA012}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\JtNode">
+      <UniqueIdentifier>{4FFC25EE-D390-3D33-B77E-14C103B456F6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\JtProperty">
+      <UniqueIdentifier>{0C122009-5542-3FB9-82E7-BCE49835DC6B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\JtToTopoDS">
+      <UniqueIdentifier>{A24B993B-A775-389D-A92B-11D1BEAE9797}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
